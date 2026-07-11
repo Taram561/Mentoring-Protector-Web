@@ -4616,7 +4616,7 @@ var mi = {
     `0:translateX,1:translateY,2:translateZ,8:rotate,8:rotationZ,8:rotateZ,9:rotateX,10:rotateY`,
   ),
   ye(
-    `x,y,z,top,right,bottom,left,width,height,fontSize,padding,margin,perspective`,
+    `x,y,z,top,right,bottom,left,width,height,Фонize,padding,margin,perspective`,
     function (e) {
       n.units[e] = `px`;
     },
@@ -5505,7 +5505,7 @@ var J,
     startColor: `green`,
     endColor: `red`,
     indent: 0,
-    fontSize: `16px`,
+    Фонize: `16px`,
     fontWeight: `normal`,
   },
   Lo = { toggleActions: `play`, anticipatePin: 0 },
@@ -5528,7 +5528,7 @@ var J,
   Bo = function (e, t, n, r, i, a, o, s) {
     var c = i.startColor,
       l = i.endColor,
-      u = i.fontSize,
+      u = i.Фонize,
       d = i.indent,
       f = i.fontWeight,
       p = X.createElement(`div`),
