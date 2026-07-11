@@ -1,1 +1,26 @@
-import{n as e,t}from"./ScrollTrigger.DDi3XPDo.js";e.registerPlugin(t),e.from(`.hero-element`,{y:80,opacity:0,duration:1.5,stagger:.2,ease:`power4.out`,delay:.2}),e.timeline({scrollTrigger:{trigger:`#hero-container`,start:`top top`,end:`+=150%`,pin:!0,scrub:1}}).to(`#hero-bg`,{scale:4,opacity:0,ease:`power2.inOut`},0).to(`#hero-content`,{y:-200,scale:.8,opacity:0,ease:`power2.in`},0);
+import { n as e, t } from "./ScrollTrigger.DDi3XPDo.js";
+(e.registerPlugin(t),
+  e.from(`.hero-element`, {
+    y: 80,
+    opacity: 0,
+    duration: 1.5,
+    stagger: 0.2,
+    ease: `power4.out`,
+    delay: 0.2,
+  }),
+  e
+    .timeline({
+      scrollTrigger: {
+        trigger: `#hero-container`,
+        start: `top top`,
+        end: `+=150%`,
+        pin: !0,
+        scrub: 1,
+      },
+    })
+    .to(`#hero-bg`, { scale: 4, opacity: 0, ease: `power2.inOut` }, 0)
+    .to(
+      `#hero-content`,
+      { y: -200, scale: 0.8, opacity: 0, ease: `power2.in` },
+      0,
+    ));
